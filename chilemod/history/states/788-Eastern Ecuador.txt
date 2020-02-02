@@ -1,0 +1,30 @@
+state={
+	id=788
+	name="STATE_788"
+	manpower = 2000000
+	resources={
+		oil=2 # was: 2
+	}
+	
+	state_category = city
+
+	history={
+		owner = SOU
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 4
+			air_base = 1
+		}
+		add_core_of = SOU
+
+		victory_points = {
+			10888 1
+		}
+
+	}
+
+	provinces={
+		10888 8075
+	}
+}

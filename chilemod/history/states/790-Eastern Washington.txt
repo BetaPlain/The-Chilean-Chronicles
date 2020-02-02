@@ -1,0 +1,28 @@
+state={
+	id=790
+	name="STATE_790"
+	manpower = 1563395
+	
+	state_category = large_town
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 5
+		}
+		add_core_of = USA
+		victory_points = {
+			1690 1 
+		}
+		victory_points = {
+			7315 10 
+		}
+	}
+
+	provinces={
+		10690 4747 10327 10198 10693 1690 12673 10687
+	}
+}

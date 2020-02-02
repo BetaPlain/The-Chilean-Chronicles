@@ -1,0 +1,34 @@
+
+state={
+	id=801
+	name="STATE_801"
+	
+	state_category = wasteland
+
+	history={
+		owner = BRB
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = CAN
+		add_core_of = CNA
+		add_core_of = BRB
+		add_core_of = BRT
+		victory_points = {
+			4720 10
+		}
+		victory_points = {
+			1785 3
+		}
+		victory_points = {
+			4787 2 
+		}
+	}
+
+	provinces={
+		4720 4787 1785
+	}
+	manpower=22179
+	buildings_max_level_factor=1.000
+}

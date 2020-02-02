@@ -1,0 +1,25 @@
+state={
+	id=332
+	name="STATE_332"
+	
+	state_category = wasteland
+
+	history={
+		owner = BRT
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = CAN
+		add_core_of = CNA
+		add_core_of = BRB
+		add_core_of = BRT
+
+	}
+
+	provinces={
+		1426 12503 13165 13180 
+	}
+	manpower=22179
+	buildings_max_level_factor=1.000
+}

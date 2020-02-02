@@ -1,0 +1,30 @@
+state={
+	id=795
+	name="STATE_795"
+
+	history={
+		owner = HCE
+		buildings = {
+			infrastructure = 1
+			7884 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = USA
+		add_core_of = HCE
+
+		victory_points = {
+			7884 10
+		}
+
+	}
+
+	provinces={
+		7884
+	}
+	manpower=1231
+	buildings_max_level_factor=1
+	state_category="rural"
+}

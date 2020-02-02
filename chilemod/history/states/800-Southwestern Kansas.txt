@@ -1,0 +1,24 @@
+
+state={
+	id=800
+	name="STATE_800"
+	manpower = 53135
+	resources={
+		oil=30 # was: 42
+	}
+	
+	state_category = city
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = USA
+	}
+
+	provinces={
+		4586 
+	}
+	
+}

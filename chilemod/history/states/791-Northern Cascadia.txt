@@ -1,0 +1,28 @@
+
+state={
+	id=791
+	name="STATE_791"
+	manpower = 638165
+	resources={
+		oil=1 # was: 2
+	}
+	
+	state_category = town
+
+	history={
+		owner = HCE
+		buildings = {
+			infrastructure = 5
+			air_base = 3
+		}
+		add_core_of = CAN
+		add_core_of = CNA
+		victory_points = {
+			1408 15 
+		}
+	}
+
+	provinces={
+		1323 1393 1408 1858 4385 4413 4428 4870 7753 7853 10228 10258 10273 12231 
+	}
+}
