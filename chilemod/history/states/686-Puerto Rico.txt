@@ -7,9 +7,10 @@ state={
 
 	history={
 		add_core_of = PUE
-		add_core_of = USA
+		add_core_of = USO
 		add_core_of = HCE
-		owner = HCE
+		add_core_of = CRB
+		owner = CRB
 		victory_points = {
 			1440 1 
 		}

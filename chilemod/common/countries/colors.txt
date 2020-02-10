@@ -499,6 +499,26 @@ BRT = {
 	color = rgb { 201 56 93 }
 	color_ui = rgb { 186 205 219 }
 }
+ESP = {
+	color = rgb { 152  130  191 }
+	color_ui = rgb { 186 205 219 }
+}
+CRB = {
+	color = rgb { 57  113  228 }
+	color_ui = rgb { 186 205 219 }
+}
+DOL = {
+	color = rgb { 149 45 102 }
+	color_ui = rgb { 186 205 219 }
+}
+USO = {
+	color = rgb { 71 141 191 }
+	color_ui = rgb { 186 205 219 }
+}
+NSO = {
+	color = rgb { 125  13  24 }
+	color_ui = rgb { 186 205 219 }
+}
 D01 = {
 	color = rgb { 33 27 14 }
 	color_ui = rgb { 245 123 38 }

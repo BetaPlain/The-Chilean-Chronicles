@@ -1,0 +1,21 @@
+
+state={
+	id=655
+	name="STATE_655"
+	manpower = 94759
+	
+	state_category = pastoral
+	history={
+		owner = NSO
+		add_core_of = NSO
+		add_claim_by = NSO
+		buildings = {
+			infrastructure = 3
+			air_base = 1
+		}
+	}
+
+	provinces={
+		855 1742 1755 
+	}
+}

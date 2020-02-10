@@ -374,7 +374,7 @@ l_english:
  STATE_372:0 "Arkansas"
  STATE_373:0 "Missouri"
  STATE_374:0 "Oklahoma"
- STATE_375:0 "Texas"
+ # Texas was edited, moved down to mod edits below.
  STATE_376:0 "New Mexico"
  STATE_377:0 "Arizona"
  STATE_378:0 "California"
@@ -802,4 +802,8 @@ l_english:
  STATE_799:0 "East New Mexico"
  STATE_800:0 "Southwest Kansas"
  STATE_801:0 "Southern Labrador"
-
+ STATE_375:0 "Eastern Texas"
+ STATE_802:0 "Southwest Texas"
+ STATE_803:0 "South Texas"
+ STATE_804:0 "Houston"
+ STATE_805:0 "Northern Texas"

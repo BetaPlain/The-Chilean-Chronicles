@@ -13,7 +13,7 @@ state={
 			}
 
 		}
-		add_core_of = USA
+		add_core_of = USO
 		add_core_of = HCE
 		victory_points = {
 			13090 1 

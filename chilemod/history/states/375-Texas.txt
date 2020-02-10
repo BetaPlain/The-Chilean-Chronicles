@@ -14,19 +14,13 @@ state={
 
 
 	history={
-		owner = USA
+		owner = USO
 		buildings = {
 			infrastructure = 6
 			industrial_complex = 9
 			air_base = 3
-			10337 = {
-				naval_base = 3
-			}
-			6785 = {
-				naval_base = 1
-			}
 		}
-		add_core_of = USA
+		add_core_of = USO
 		victory_points = {
 			10337 10
 		}
@@ -40,6 +34,6 @@ state={
 	}
 
 	provinces={
-		805 1500 1915 1927 1954 2019 2042 2082 3960 4577 4884 4955 5001 5022 5038 5061 5085 6785 6968 6987 7628 7981 9829 9920 10337 10504 10740 10778 10861 10894 12341 12369 12410 12486 12728 12782
+		805 5022 12341 10504 7628 12486 4577 6968 5001
 	}
 }

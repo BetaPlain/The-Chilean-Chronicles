@@ -1,0 +1,28 @@
+state={
+	id=804
+	name="STATE_804"
+	manpower = 352621
+	
+	
+	state_category = metropolis
+	
+	resources={
+		oil=320 # was: 580
+		aluminium=50 # was: 96
+	}
+
+
+	history={
+		owner = USO
+		buildings = {
+			infrastructure = 8
+			industrial_complex = 1
+		}
+		add_core_of = USO
+
+	}
+
+	provinces={
+		10337 12410 1500
+	}
+}

@@ -7,7 +7,7 @@ state={
 	state_category = rural
 
 	history={
-		owner = BRT
+		owner = DOL
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
@@ -19,9 +19,10 @@ state={
 		add_core_of = CNA
 		add_core_of = BRB
 		add_core_of = BRT
+		add_core_of = DOL
 	}
 
 	provinces={
-		7758 7788 12505 12680 12698 
+		 7788 12505 12680 12698 
 	}
 }

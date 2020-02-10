@@ -14,22 +14,9 @@ state={
 	history={
 		owner = HCE
 		buildings = {
-			infrastructure = 3
-			arms_factory = 2
-			1562 = {
-				naval_base = 10
-			}
-			9671 = {
-				naval_base = 4
-			}
-			9814 = {
-				naval_base = 5
-			}
-			610 = {
-				naval_base = 1
-			}
+			infrastructure = 1
 		}
-		add_core_of = USA
+		add_core_of = USO
 		victory_points = {
 			9814 30
 		}

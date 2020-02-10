@@ -15,11 +15,9 @@ state={
 		add_core_of = CNA
 		add_core_of = BRB
 		add_core_of = BRT
+		add_core_of = DOL
 		victory_points = {
 			4720 10
-		}
-		victory_points = {
-			1785 3
 		}
 		victory_points = {
 			4787 2 

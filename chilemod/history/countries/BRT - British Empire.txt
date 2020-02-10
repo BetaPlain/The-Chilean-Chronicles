@@ -14,11 +14,6 @@ if = {
 		has_start_date < 1936.01.02
 	}
 
-	declare_war_on = {
-		target = BRB
-		type = annex_everything
-	}
-
 }
 # Starting tech
 set_technology = {
@@ -57,6 +52,27 @@ if = {
 		mtg_transport = 1
 	}
 }
+
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
+		target = DOL
+		autonomous_state = autonomy_colony
+		freedom_level = 0.35
+	}
+	else = {
+		puppet = DOL
+	}
+}
+
+create_faction = Allies
+add_to_faction = ENG
+add_to_faction = DOL
 
 set_country_flag = monroe_doctrine
 

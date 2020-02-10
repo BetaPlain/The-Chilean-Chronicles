@@ -15,7 +15,7 @@ state={
 				naval_base = 3
 			}
 		}
-		add_core_of = USA
+		add_core_of = USO
 		victory_points = {
 			1690 1 
 		}

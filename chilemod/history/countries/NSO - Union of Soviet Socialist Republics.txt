@@ -1,0 +1,61 @@
+﻿capital = 8
+
+#oob = "HCE_1936"
+#if = {
+#	limit = { has_dlc = "Man the Guns" }
+#		set_naval_oob = "CHL_1936_naval_mtg"
+#	else = {
+#		set_naval_oob = "CHL_1936_naval_legacy"
+#	}
+#}
+
+set_country_flag = monroe_doctrine
+
+set_convoys = 0
+
+set_convoys = 0
+set_politics = {
+	ruling_party = communism
+	last_election = "1935.11.14"
+	election_frequency = 48  #but 4 years after this one in 1938.
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 0
+	communism = 100
+}
+
+create_country_leader = {
+	name = "Gordon Macdonald"
+	desc = ""
+	picture = "gfx/leaders/DOL/portrait_DOL_one.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Oswald Mosley"
+	desc = "POLITICS_OSWALD_MOSLEY_DESC"
+	picture = "Portrait_Britain_Oswald_Mosley.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		champion_of_peace_1
+		economic_reformer
+	}
+}
+
+create_country_leader = {
+	name = "Mickey Mouse"
+	desc = ""
+	picture = "gfx/leaders/NSO/Mickey_Mouse.dds"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {
+		dictator
+	}
+}
+
