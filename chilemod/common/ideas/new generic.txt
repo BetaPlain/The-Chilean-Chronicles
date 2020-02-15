@@ -1,0 +1,83 @@
+ideas = {
+
+	country = {
+			
+		people_want_democracy = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+				democratic_drift = 0.25
+			}
+		}	
+		people_want_fascism = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+				fascism_drift = 0.25
+			}
+		}
+		people_want_communism = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+				communism_drift = 0.25
+			}
+		}
+		people_want_neutral = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+				neutrality_drift = 0.1
+			}
+		}
+	}
+
+}

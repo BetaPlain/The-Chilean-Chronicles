@@ -1,0 +1,31 @@
+﻿###########################
+# New Generic Events
+###########################
+
+add_namespace = newgeneric3
+
+#Toggle Swastika Flags
+country_event = {
+	id = newgeneric3.6
+	title = newgeneric3.6.t
+	desc = newgeneric3.6.d
+	picture = G
+	
+	fire_only_once = yes
+
+	
+	option = {
+		ai_chance = {
+			base = 1
+				}			
+			
+		name = newgeneric3.6.a
+	}
+	option = {
+		ai_chance = {
+			base = 1
+				}		
+			
+		name = newgeneric3.7.a
+	}
+}

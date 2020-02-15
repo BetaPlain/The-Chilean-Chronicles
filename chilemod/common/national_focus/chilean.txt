@@ -22,8 +22,7 @@ focus_tree = {
 		id = HCE_panama_or_war
 		icon = GFX_goal_generic_consumer_goods
 		mutually_exclusive = { focus = HCE_unholy_alliance }
-		mutually_exclusive = { focus = HCE_the_bering_incident }
-		x = 7
+		x = 8
 		y = 0
 		offset = {
 			x = 0
@@ -39,7 +38,9 @@ focus_tree = {
 		}
 
 		available = {
-
+			USO = {
+			has_civil_war = yes
+			}
 		}
 		
 		bypass = {
@@ -68,13 +69,15 @@ focus_tree = {
    				 id = uso.3
 				}
 			}
+			country_event = {
+   				 id = hce.2
+				}
 		}
 	}
 	focus = {
 		id = HCE_unholy_alliance
 		icon = GFX_goal_generic_consumer_goods
 		mutually_exclusive = { focus = HCE_panama_or_war }
-		mutually_exclusive = { focus = HCE_the_bering_incident }
 		x = 2
 		y = 0
 		offset = {
@@ -91,78 +94,10 @@ focus_tree = {
 		}
 
 		available = {
-
 		}
 		
 		bypass = {
 			is_in_faction_with = GEE
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = HCE_the_bering_incident
-		icon = GFX_goal_generic_consumer_goods
-		mutually_exclusive = { focus = HCE_panama_or_war }
-		mutually_exclusive = { focus = HCE_unholy_alliance }
-		x = 12
-		y = 0
-		offset = {
-			x = 0
-			y = 0
-			trigger = {
-				not = { has_dlc = "Man the Guns" }
-			}
-		}
-		cost = 15
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = HCE_mobilize_winter_troops
-		icon = GFX_goal_generic_consumer_goods
-		prerequisite = { focus = HCE_the_bering_incident }
-		x = 12
-		y = 1
-		offset = {
-			x = 0
-			y = 0
-			trigger = {
-				not = { has_dlc = "Man the Guns" }
-			}
-		}
-		cost = 10
-
-		ai_will_do = {
-			factor = 100
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
 		}
 
 		cancel_if_invalid = yes
@@ -188,7 +123,7 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 100
+			factor = 25
 		}
 
 		available = {
@@ -206,42 +141,9 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-		}
-	}
-	focus = {
-		id = HCE_repair_panama_canal
-		icon = GFX_goal_generic_consumer_goods
-		prerequisite = { focus = HCE_the_panama_trap }
-		x = 6
-		y = 2
-		offset = {
-			x = 0
-			y = 0
-			trigger = {
-				not = { has_dlc = "Man the Guns" }
-			}
-		}
-		cost = 10
-
-		ai_will_do = {
-			factor = 85
-		}
-
-		available = {
-			685 = {
-			is_controlled_by = HCE
+			country_event = {
+   				 id = hce.5
 				}
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
 		}
 	}
 	focus = {
@@ -389,6 +291,464 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HCE_take_mexico
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = HCE_the_panama_trap }
+		x = 6
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+			trigger = {
+				not = { has_dlc = "Man the Guns" }
+			}
+		}
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HCE_yellow_rose_of_texas
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = HCE_panama_or_war }
+		x = 10
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+			trigger = {
+				not = { has_dlc = "Man the Guns" }
+			}
+		}
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HCE_texan_puppet
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = HCE_yellow_rose_of_texas }
+		x = 10
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+			trigger = {
+				not = { has_dlc = "Man the Guns" }
+			}
+		}
+		cost = 10
+
+		ai_will_do = {
+			factor = 75
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HCE_trick_the_french
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = HCE_yellow_rose_of_texas }
+		x = 12
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+			trigger = {
+				not = { has_dlc = "Man the Guns" }
+			}
+		}
+		cost = 10
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HCE_listen_to_the_people
+		icon = GFX_goal_generic_consumer_goods
+		x = 19
+		y = 0
+		offset = {
+			x = 0
+			y = 0
+			trigger = {
+				not = { has_dlc = "Man the Guns" }
+			}
+		}
+		cost = 14.4
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 450
+		}
+	}
+	focus = {
+		id = HCE_the_new_republic
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = HCE_listen_to_the_people }
+		mutually_exclusive = { focus = HCE_our_own_commune }
+		mutually_exclusive = { focus = HCE_the_chilean_dictator }
+		mutually_exclusive = { focus = HCE_neutral_focus }
+		x = 14
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+			trigger = {
+				not = { has_dlc = "Man the Guns" }
+			}
+		}
+		cost = 10
+
+		ai_will_do = {
+			factor = 70
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_ideas = people_want_democracy
+		}
+	}
+	focus = {
+		id = HCE_our_own_commune
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = HCE_listen_to_the_people }
+		mutually_exclusive = { focus = HCE_the_new_republic }
+		mutually_exclusive = { focus = HCE_the_chilean_dictator }
+		mutually_exclusive = { focus = HCE_neutral_focus }
+		x = 17
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+			trigger = {
+				not = { has_dlc = "Man the Guns" }
+			}
+		}
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_ideas = people_want_communism
+		}
+	}
+	focus = {
+		id = HCE_the_chilean_dictator
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = HCE_listen_to_the_people }
+		mutually_exclusive = { focus = HCE_the_new_republic }
+		mutually_exclusive = { focus = HCE_our_own_commune }
+		mutually_exclusive = { focus = HCE_neutral_focus }
+		x = 20
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+			trigger = {
+				not = { has_dlc = "Man the Guns" }
+			}
+		}
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_ideas = people_want_fascism
+		}
+	}
+	focus = {
+		id = HCE_neutral_focus
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = HCE_listen_to_the_people }
+		mutually_exclusive = { focus = HCE_the_new_republic }
+		mutually_exclusive = { focus = HCE_the_chilean_dictator }
+		mutually_exclusive = { focus = HCE_our_own_commune }
+		x = 23
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+			trigger = {
+				not = { has_dlc = "Man the Guns" }
+			}
+		}
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_ideas = people_want_neutral
+		}
+	}
+	focus = {
+		id = HCE_learn_from_our_neighbors
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = HCE_the_new_republic }
+		x = 14
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+			trigger = {
+				not = { has_dlc = "Man the Guns" }
+			}
+		}
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = HCE_freedom_of_the_press
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = HCE_learn_from_our_neighbors }
+		mutually_exclusive = { focus = HCE_ban_fascism }
+		x = 13
+		y = 3
+		offset = {
+			x = 0
+			y = 0
+			trigger = {
+				not = { has_dlc = "Man the Guns" }
+			}
+		}
+		cost = 10
+
+		ai_will_do = {
+			factor = 75
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_political_power = 350
+		add_ideas = freedom_of_the_press
+		}
+	}
+	focus = {
+		id = HCE_ban_fascism
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = HCE_learn_from_our_neighbors }
+		mutually_exclusive = { focus = HCE_freedom_of_the_press }
+		x = 15
+		y = 3
+		offset = {
+			x = 0
+			y = 0
+			trigger = {
+				not = { has_dlc = "Man the Guns" }
+			}
+		}
+		cost = 10
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HCE_the_soaring_eagle
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = HCE_freedom_of_the_press }
+		x = 13
+		y = 4
+		offset = {
+			x = 0
+			y = 0
+			trigger = {
+				not = { has_dlc = "Man the Guns" }
+			}
+		}
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_political_power = 750
+		add_ideas = the_soaring_eagle
 		}
 	}
 }

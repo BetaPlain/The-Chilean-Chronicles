@@ -3217,3 +3217,35 @@ l_english:
  uso.3.d:0 "The Chileans have requested that we do unreasonable things such as giving them the canal or they will go to war. This is clearly an excuse from the Chleans' part just so they can have war with us again. All they want is the beaches, but the New England Beaches home some of our most important cities, such as Washington and New York."
  uso.3.a:0 "We need to accept, no matter how harsh the request is."
  uso.4.a:0 "This is unacceptable! We cannot pay for such harsh requests!"
+ #Generic Events (New Ones For The Mod, Political)
+ #The People Want Democracy!
+ newgeneric.1.t:0 "The People Want Democracy"
+ newgeneric.1.d:0 "During a recent referendum, the people voted that they would rather see the path of democracy."
+ newgeneric.1.a:0 "The people have voted!"
+ #The People Want A Dictatorship!
+ newgeneric.2.t:0 "The People Want a Dictatorship!"
+ newgeneric.2.d:0 "During a recent referendum, the people voted that they would rather have a new dictator in office."
+ newgeneric.2.a:0 "The people have voted!"
+ #The People Want Communism!
+ newgeneric.3.t:0 "The People Want Communism"
+ newgeneric.3.d:0 "During a recent referendum, the people voted that they would rather see the path of communism."
+ newgeneric.3.a:0 "The people have voted!"
+
+ #The People Want to be Neutral!
+ newgeneric.4.t:0 "The People Want to be Neutral!"
+ newgeneric.4.d:0 "During a recent referendum, the people voted that they would rather see our great nation become neutral and not interfere with other nations."
+ newgeneric.4.a:0 "The people have voted!"
+ #Chile Events Continue From Here
+ # The Panama Trap is Ready!
+ hce.5.t:0 "The Panama Trap Is Set!"
+ hce.5.d:0 "Reports from our construction teams indicate that the Panama Canal is now fortified and trapped, with traps ranging from mines to anti-aircraft weapons."
+ hce.7.a:0 "Now to play the waiting game."
+ #Welcome to the Mod! (All players)
+ newgeneric2.5.t:0 "Welcome to the Chilean Chronicles Mod!"
+ newgeneric2.5.d:0 "Hello! This is BetaPlain, the one and only developer of the mod. This mod is designed for fun, and will not have complete historical accuracy. However, I did try to add as much accuracy as possible while still making the mod fun. Have fun!\n\nAs a side note, the next event will allow you to toggle on/off settings. You can always access the Settings events again by going to your country's decisions!"
+ newgeneric2.5.a:0 "Thanks, BetaPlain!"
+ #Settings (Swastika Settings Menu)
+ newgeneric3.6.t:0 "Would You Like Flags to Have Swastikas?"
+ newgeneric3.6.d:0 "Some fascist party flags may include swastikas. You can toggle this on/off here.\n\nRemember, you can always access these settings again in your country's decisions!"
+ newgeneric3.6.a:0 "Keep them on."
+ newgeneric3.7.a:0 "I don't want those!"

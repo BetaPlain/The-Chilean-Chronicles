@@ -1,0 +1,46 @@
+ideas = {
+
+	country = {
+
+		freedom_of_the_press = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+				political_power_gain = 0.25
+			}
+		}
+		the_soaring_eagle = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+				political_power_gain = 0.75
+				democratic_drift = 0.5
+			}
+		}
+	}
+
+}
