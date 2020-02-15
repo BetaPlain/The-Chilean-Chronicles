@@ -1,0 +1,23 @@
+ideas = {
+
+	country = {
+		bored = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				drift_defence_factor = 0.5
+			}
+		}	
+
+	}
+
+}

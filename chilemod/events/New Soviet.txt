@@ -1,0 +1,26 @@
+﻿###########################
+# New Soviet Events
+###########################
+
+add_namespace = newsoviet
+
+# Exist Number One
+country_event = {
+	id = newsoviet.1
+	title = newsoviet.1.t
+	desc = newsoviet.1.d
+	picture = GFX_newsoviet_1
+	
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		ai_chance = {
+			base = 1
+			}		
+		name = newsoviet.1.a
+	}
+}

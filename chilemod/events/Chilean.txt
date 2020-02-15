@@ -1,0 +1,121 @@
+﻿###########################
+# Chilean Empire Events
+###########################
+
+add_namespace = hce
+# South Americans Declare on Ecuador!
+country_event = {
+	id = hce.1
+	title = hce.1.t
+	desc = hce.1.d
+	picture = news_event_001
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+
+	option = {
+
+	
+		ai_chance = {
+			base = 50
+			}
+		name = hce.1.a
+	}
+	option = {
+
+	
+		ai_chance = {
+			base = 50
+			}
+		name = hce.2.a
+	}
+}
+# Panama Or War!
+country_event = {
+	id = hce.2
+	title = hce.2.t
+	desc = hce.2.d
+	picture = news_event_001
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+
+	option = {
+
+	
+		ai_chance = {
+			base = 100
+			}
+		name = hce.3.a
+	}
+}
+#US Denies Panama
+country_event = {
+	id = hce.3
+	title = hce.3.t
+	desc = hce.3.d
+	picture = news_event_001
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+
+	option = {
+
+	
+		ai_chance = {
+			base = 100
+			}
+				declare_war_on = {
+					target = FSA
+					type = annex_everything
+					}
+				declare_war_on = {
+					target = USO
+					type = annex_everything
+					}
+				declare_war_on = {
+					target = CSA
+					type = annex_everything
+					}
+		name = hce.4.a
+	}
+}
+#US Accepts Panama
+country_event = {
+	id = hce.4
+	title = hce.4.t
+	desc = hce.4.d
+	picture = news_event_001
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+
+	option = {
+
+	
+		ai_chance = {
+			base = 60
+			}
+		name = hce.5.a
+	}
+	option = {
+
+	
+		ai_chance = {
+			base = 40
+			}
+		name = hce.6.a
+				declare_war_on = {
+					target = FSA
+					type = annex_everything
+					}
+				declare_war_on = {
+					target = CSA
+					type = annex_everything
+					}
+				declare_war_on = {
+					target = USO
+					type = annex_everything
+					}
+	}
+}

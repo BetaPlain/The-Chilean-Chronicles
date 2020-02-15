@@ -1,0 +1,203 @@
+focus_tree = {
+	id = uso_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = uso
+		}
+		
+		modifier = {
+			add = 10
+			original_tag = uso
+		}
+	}
+	continuous_focus_position = { x = 50 y = 1600 }
+
+	default = no
+
+	focus = {
+		id = USO_pick_a_side
+		icon = GFX_goal_generic_army_doctrines
+		x = 9
+		y = 0
+		offset = {
+			x = 0
+			y = 0
+		}
+		cost = 7.2
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			has_stability < 0.35
+		}
+		
+		bypass = {
+			has_civil_war = yes
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+	}
+		focus = {
+		id = USO_democratic_side
+		icon = GFX_goal_support_democracy
+		x = 18
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = USO_pick_a_side }
+		mutually_exclusive = { focus = USO_fascism_side }
+		mutually_exclusive = { focus = USO_confederate_side }
+		cost = 14.4
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+			has_stability < 0.35
+		}
+		
+		bypass = {
+			has_civil_war = yes
+			has_government = democratic
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			country_event = {
+    id = uso.1
+    days = 0
+}
+		}
+	}
+			focus = {
+		id = USO_fascism_side
+		icon = GFX_goal_support_fascism
+		x = 12
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = USO_pick_a_side }
+		mutually_exclusive = { focus = USO_democratic_side }
+		mutually_exclusive = { focus = USO_confederate_side }		
+		mutually_exclusive = { focus = USO_prevent_civil_war }
+		cost = 14.4
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			has_stability < 0.35
+		}
+		
+		bypass = {
+			has_civil_war = yes
+			has_government = fascism
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {			
+			country_event = {
+    id = uso.1
+    days = 0
+}
+		}
+	}
+			focus = {
+		id = USO_confederate_side
+		icon = GFX_goal_generic_small_arms
+		x = 6
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = USO_pick_a_side }
+		mutually_exclusive = { focus = USO_fascism_side }
+		mutually_exclusive = { focus = USO_democratic_side }
+		mutually_exclusive = { focus = USO_prevent_civil_war }
+		cost = 14.4
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+			has_stability < 0.35
+		}
+		
+		bypass = {
+			has_civil_war = yes
+			has_government = neutrality
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+
+		}
+	}
+			focus = {
+		id = USO_prevent_civil_war
+		icon = GFX_goal_generic_national_unity
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { focus = USO_pick_a_side }
+		mutually_exclusive = { focus = USO_fascism_side }
+		mutually_exclusive = { focus = USO_confederate_side }
+		mutually_exclusive = { focus = USO_democratic_side }
+		cost = 14.4
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		available = {
+			has_stability < 0.35
+		}
+		
+		bypass = {
+			has_civil_war = yes
+			has_government = democratic
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+
+		}
+	}
+}

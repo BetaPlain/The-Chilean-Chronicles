@@ -1,0 +1,91 @@
+﻿###########################
+# United States America Events
+###########################
+
+add_namespace = uso
+#Civil War (News, World Wide)
+news_event = {
+	id = uso.1
+	title = uso.1.t
+	desc = uso.1.d
+	picture = news_event_001
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+
+	option = {
+
+	
+		ai_chance = {
+			base = 1
+			}
+		name = uso.1.a
+	}
+}
+#Fascists Start A Civil War! (US Only)
+country_event = {
+	id = uso.2
+	title = uso.2.t
+	desc = uso.2.d
+	picture = news_event_001
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+
+	option = {	
+		ai_chance = {
+			base = 1
+			}
+			  start_civil_war = {
+    			ruling_party = democratic
+   				 ideology = fascism
+    			size = 1
+    			only_own_territory = yes
+    			capital = 4799
+    			states = { 
+        		379 376 377 1740 382 1815 4857 10602 4747 7721 789 790 387 388 389 3750 3855 381 380 390 384
+    		  }
+    keep_unit_leaders = {
+
+    }
+}						
+		name = uso.2.a
+	}
+}
+#Chileans Request Panama (US Side)
+country_event = {
+	id = uso.3
+	title = uso.3.t
+	desc = uso.3.d
+	picture = news_event_001
+	fire_only_once = yes
+	is_triggered_only = yes
+
+
+	option = {
+
+	
+		ai_chance = {
+			base = 75
+			}
+				HCE = {	country_event = {
+    				id = hce.4
+    					days = 0
+						}
+					}	
+		name = uso.3.a
+	}
+	option = {
+
+	
+		ai_chance = {
+			base = 25
+			}
+				HCE = {	country_event = {
+    				id = hce.3
+    					days = 0
+						}
+					}	
+		name = uso.4.a
+	}
+}

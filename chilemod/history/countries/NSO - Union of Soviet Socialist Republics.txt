@@ -13,6 +13,8 @@ set_country_flag = monroe_doctrine
 
 set_convoys = 0
 
+add_ideas = bored
+
 set_convoys = 0
 set_politics = {
 	ruling_party = communism

@@ -1,0 +1,59 @@
+focus_tree = {
+	id = nso_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = NSO
+		}
+		
+		modifier = {
+			add = 10
+			original_tag = NSO
+		}
+	}
+	continuous_focus_position = { x = 50 y = 1600 }
+
+	default = no
+
+	focus = {
+		id = NSO_exist
+		icon = GFX_goal_generic_consumer_goods
+		x = 1
+		y = 0
+		offset = {
+			x = 0
+			y = 0
+			trigger = {
+				not = { has_dlc = "Man the Guns" }
+			}
+		}
+		cost = 0.2
+
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+    id = newsoviet.1
+    days = 1
+}
+
+		}
+	}
+}

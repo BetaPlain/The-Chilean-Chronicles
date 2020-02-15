@@ -1,0 +1,394 @@
+focus_tree = {
+	id = hce_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = HCE
+		}
+		
+		modifier = {
+			add = 10
+			original_tag = HCE
+		}
+	}
+	continuous_focus_position = { x = 50 y = 1600 }
+
+	default = no
+
+	focus = {
+		id = HCE_panama_or_war
+		icon = GFX_goal_generic_consumer_goods
+		mutually_exclusive = { focus = HCE_unholy_alliance }
+		mutually_exclusive = { focus = HCE_the_bering_incident }
+		x = 7
+		y = 0
+		offset = {
+			x = 0
+			y = 0
+			trigger = {
+				not = { has_dlc = "Man the Guns" }
+			}
+		}
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+			has_war_with = USO
+			has_war_with = CSA
+			has_war_with = FSA
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		USO = {
+			country_event = {
+   				 id = uso.3
+				}
+			}
+		CSA = {
+			country_event = {
+   				 id = uso.3
+				}
+			}
+		FSA = {
+			country_event = {
+   				 id = uso.3
+				}
+			}
+		}
+	}
+	focus = {
+		id = HCE_unholy_alliance
+		icon = GFX_goal_generic_consumer_goods
+		mutually_exclusive = { focus = HCE_panama_or_war }
+		mutually_exclusive = { focus = HCE_the_bering_incident }
+		x = 2
+		y = 0
+		offset = {
+			x = 0
+			y = 0
+			trigger = {
+				not = { has_dlc = "Man the Guns" }
+			}
+		}
+		cost = 15
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+			is_in_faction_with = GEE
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = HCE_the_bering_incident
+		icon = GFX_goal_generic_consumer_goods
+		mutually_exclusive = { focus = HCE_panama_or_war }
+		mutually_exclusive = { focus = HCE_unholy_alliance }
+		x = 12
+		y = 0
+		offset = {
+			x = 0
+			y = 0
+			trigger = {
+				not = { has_dlc = "Man the Guns" }
+			}
+		}
+		cost = 15
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = HCE_mobilize_winter_troops
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = HCE_the_bering_incident }
+		x = 12
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+			trigger = {
+				not = { has_dlc = "Man the Guns" }
+			}
+		}
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = HCE_the_panama_trap
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = HCE_panama_or_war }
+		x = 6
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+			trigger = {
+				not = { has_dlc = "Man the Guns" }
+			}
+		}
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			685 = {
+			is_controlled_by = HCE
+				}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = HCE_repair_panama_canal
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = HCE_the_panama_trap }
+		x = 6
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+			trigger = {
+				not = { has_dlc = "Man the Guns" }
+			}
+		}
+		cost = 10
+
+		ai_will_do = {
+			factor = 85
+		}
+
+		available = {
+			685 = {
+			is_controlled_by = HCE
+				}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = HCE_war_propaganda
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = HCE_panama_or_war }
+		x = 8
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+			trigger = {
+				not = { has_dlc = "Man the Guns" }
+			}
+		}
+		cost = 10
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = HCE_take_canada
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = HCE_war_propaganda }
+		x = 8
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+			trigger = {
+				not = { has_dlc = "Man the Guns" }
+			}
+		}
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = HCE_northern_infastructure_improvements
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = HCE_take_canada }
+		x = 8
+		y = 3
+		offset = {
+			x = 0
+			y = 0
+			trigger = {
+				not = { has_dlc = "Man the Guns" }
+			}
+		}
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			471 = {
+			is_controlled_by = HCE
+				}
+			473 = {
+			is_controlled_by = HCE
+				}
+			470 = {
+			is_controlled_by = HCE
+				}
+			469 = {
+			is_controlled_by = HCE
+				}
+			472 = {
+			is_controlled_by = HCE
+				}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = HCE_take_labrador
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = HCE_northern_infastructure_improvements }
+		x = 8
+		y = 4
+		offset = {
+			x = 0
+			y = 0
+			trigger = {
+				not = { has_dlc = "Man the Guns" }
+			}
+		}
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+}

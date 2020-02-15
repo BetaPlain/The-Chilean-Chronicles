@@ -1,24 +1,20 @@
 
 state={
-	id=390
-	name="STATE_390"
-	manpower = 692849
+	id=808
+	name="STATE_808"
+	manpower = 3562631
 	state_category = rural
 
 	history={
 		owner = USO
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 1
 		}
 		add_core_of = USO
-		victory_points = {
-			1747 1 
-		}
 
 	}
 
 	provinces={
-		1747 1875 3750 4839 7745 7771
+		7862 4880 12620 12667 10569 10595
 	}
 }
