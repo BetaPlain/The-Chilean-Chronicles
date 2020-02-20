@@ -1,20 +1,22 @@
 
 state={
-	id=808
-	name="STATE_808"
-	manpower = 3562631
+	id=813
+	name="STATE_813"
+	manpower = 231223
 	state_category = rural
-
+	
 	history={
 		owner = USO
 		buildings = {
-			infrastructure = 4
+			infrastructure = 3
 		}
 		add_core_of = USO
-
+		add_core_of = USO
 	}
 
 	provinces={
-		7862 4880 12620 12667 10569 10595 7771
+		868 1658 3869 
 	}
+	
 }
+

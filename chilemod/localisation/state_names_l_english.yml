@@ -811,3 +811,6 @@ l_english:
  STATE_808:0 "East South Dakota"
  STATE_809:0 "East Nebraska"
  STATE_810:0 "East Colorado"
+ STATE_811:0 "South Wyoming"
+ STATE_810:0 "South Colorado"
+ STATE_813:0 "Mid Colorado"

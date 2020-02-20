@@ -18,6 +18,7 @@ state={
 			infrastructure = 4
 		}
 		add_core_of = USO
+		add_core_of = TEX
 	}
 
 	provinces={

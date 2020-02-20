@@ -21,6 +21,7 @@ state={
 			air_base = 3
 		}
 		add_core_of = USO
+		add_core_of = TEX
 		victory_points = {
 			10337 10
 		}
@@ -34,6 +35,6 @@ state={
 	}
 
 	provinces={
-		805 5022 12341 10504 7628 12486 4577 6968 5001
+		805 5022 12341 10504 7628 12486 4577 5001 6968
 	}
 }

@@ -1,0 +1,29 @@
+﻿###########################
+# Start Up Events
+# These start when the game detects a player!
+###########################
+
+add_namespace = newgeneric2
+
+# Welcome to the Mod!
+country_event = {
+	id = newgeneric2.5
+	title = newgeneric2.5.t
+	desc = newgeneric2.5.d
+	picture = G
+	
+	fire_only_once = yes
+
+	trigger = {
+	is_ai = no
+	}
+
+	
+	option = {
+		ai_chance = {
+			base = 100
+				}			
+			
+		name = newgeneric2.5.a
+	}
+}
